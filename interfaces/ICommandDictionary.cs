@@ -13,5 +13,21 @@ namespace VirtualMachine.interfaces
         public string Sub();
 
         public string Push(string value);
+
+        public string Pop(string segment, string value);
+
+        public string Eq();
+
+        public string Lt();
+
+        public string Gt();
+
+        public string Not();
+
+        public string Or();
+
+        public string Neg();
+        
+
     }
 }

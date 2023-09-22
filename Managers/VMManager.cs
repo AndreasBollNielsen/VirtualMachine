@@ -16,6 +16,9 @@ namespace VirtualMachine.Managers
             _parseService = parseService;
         }
 
+        /// <summary>
+        /// Manager calling the parse service
+        /// </summary>
         public void CompileCode()
         {
             _parseService.ParseVMCode();

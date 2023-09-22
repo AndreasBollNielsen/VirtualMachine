@@ -9,6 +9,7 @@ class Program
     public static  IConfiguration? configuration;
     private  IVMManager _vmManager;
 
+    //inject main manager 
     public Program(IVMManager vMManager)
     {
         _vmManager = vMManager;
@@ -30,11 +31,6 @@ class Program
             AddTransient<ICommandDictionary, CommandDictionary>().
             BuildServiceProvider();
         var program = ActivatorUtilities.CreateInstance<Program>(serviceProvider);
-
-        
-
-
-     
 
         
         program.RunProgram();

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace VirtualMachine.Models
 {
+    /// <summary>
+    /// model containing the parts of a single VM command
+    /// note value and segment can be null
+    /// </summary>
     internal class Instruction
     {
         private string _Command;
